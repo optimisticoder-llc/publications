@@ -16,8 +16,8 @@ When you choose one item (e.g., A) over another (e.g., B), the algorithm records
 - For $ n $ items, a full pairwise comparison requires $ \binom{n}{2} = \frac{n(n-1)}{2} $ comparisons.
 - The Beacon Algorithm achieves:
   - **Best case**: $ n-1 $ comparisons (e.g., for a linear order like A > B > C).
-  - **Average case**: ~40–50% of $ \binom{n}{2} $ for $ n = 15 $ (e.g., ~42–53 comparisons instead of 105).
-  - **Smaller sets** (e.g., $ n = 3 $ ): ~40–80% of $ \binom{3}{2} = 2..3 $ comparisons.
+  - **Average case**: ~44% of $ \binom{n}{2} $ for $ n = 15 $ (e.g., ~15-34 comparisons instead of 105).
+  - **Smaller sets** (e.g., $ n = 3 $ ): ~50% of $ \binom{3}{2} = 2..3 $ comparisons.
 - This efficiency is driven by a transitive reduction graph, which removes redundant edges while preserving the preference order:
 
 $$
@@ -117,13 +117,13 @@ The algorithm selects pairs to minimize comparisons while maximizing information
 - **Transitive Reduction**: Skips pairs already resolved by transitive paths (e.g., if A > B and B > C, skip A vs. C).
 - **Randomization**: Ensures diversity by randomly selecting among viable pairs when needed.
 
-This approach achieves logarithmic efficiency, requiring only ~40–50% of $ \binom{n}{2} $ comparisons for $ n = 15 $.
+This approach achieves logarithmic efficiency, requiring only ~44% of $ \binom{n}{2} $ comparisons for $ n = 15 $.
 
 ---
 
 ## 🛑 Early Stopping for Efficiency
 
-The algorithm stops when rankings stabilize, typically after ~40–50% of possible comparisons for larger sets ( $ n = 15 $ ). Stability is assessed by checking if recent comparisons align with the current ranking, ensuring efficiency without sacrificing accuracy.
+The algorithm stops when rankings stabilize, typically after ~44% of possible comparisons for larger sets ( $ n = 15 $ ). Stability is assessed by checking if recent comparisons align with the current ranking, ensuring efficiency without sacrificing accuracy.
 
 ---
 
@@ -154,6 +154,12 @@ Where:
     This efficiency means you can gain valuable insights with **significantly fewer comparisons per user**, enabling faster feedback loops even with a limited number of survey participants (e.g., often just 1-30 individual responses are enough to uncover preferences within a given item set, depending on required confidence).
 - 🧭 **Deeper Insights**: Beyond simple ranks, our system uses reaction time to gauge decision certainty, providing nuanced scores (e.g., 1000 vs. 740 for a close preference).
 - 📊 **Actionable Probabilities**: Head-to-head probabilities (via Bradley-Terry) offer clear, market-ready insights into the strength of preferences, perfect for strategic decision-making.
+
+<div class="flex gap-4 w-full">
+    <a title="Beacon Performance" href="beacon-performance.webp" target="_blank" class="hover:scale-105 transition-all border h-fit rounded-lg bg-background">
+        <img src="beacon-performance.webp" alt="Beacon Performance" class="w-full" />
+    </a>
+</div>
 
 ---
 
