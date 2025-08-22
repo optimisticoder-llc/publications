@@ -145,19 +145,13 @@ Certiscore is the next step in preference science:
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">
         Creative Commons Attribution-ShareAlike 4.0 International
     </a>
-    <img
-        alt="CC"
-        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-        class="w-fit h-fit max-w-4 inline"
-    />
-    <img
-        alt="Attribution"
-        src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-        class="w-fit h-fit max-w-4 inline"
-    />
-    <img
-        alt="SA"
-        src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
-        class="w-fit h-fit max-w-4 inline"
-    />
+    <br/>
+    <small>
+        "Certiscore" is a trademark of PT Optimisticoder Innovation Labs.
+        The method itself is open and shared under CC BY-SA 4.0.
+    </small>
+    <br/>
+    <img alt="CC" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class="inline h-4"/>
+    <img alt="Attribution" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" class="inline h-4"/>
+    <img alt="SA" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" class="inline h-4"/>
 </div>
