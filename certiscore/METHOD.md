@@ -128,7 +128,7 @@ We disclose the science, keep methods peer-reviewable, and protect implementatio
 ---
 
 > 🧪 **Disclaimer**
-> Certiscore metrics are based on internal simulations. Results are reliable in practice but not peer-reviewed. For academic collaboration, [contact us](/feedback).
+> Certiscore metrics are based on internal simulations. Results are reliable in practice but not peer-reviewed. For academic collaboration, [contact us](https://pingpolls.com/feedback).
 
 ---
 
